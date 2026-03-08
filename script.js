@@ -101,7 +101,7 @@ function draw() {
 
 	// Bottom Text
 	ctx.textAlign = 'center';
-	textWrap(bottomText.toUpperCase(), 0.5 * width, 0.832 * height, 0.999 * width, 0.180 * height, false);
+	textWrap(bottomText.toUpperCase(), 0.5 * width, 0.832 * height, 0.999 * width, 0.167 * height, false);
 }
 
 function textWrap(text, x, y, width, height, alignBottom = true) {
