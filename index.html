@@ -14,19 +14,29 @@
 		<h1>xkcd 2501 generator</h1>
 	</header>
 	<main>
-		<canvas id='canvas' width=295 height=480></canvas>
+		<canvas id='canvas' width=589 height=961></canvas>
 		<fieldset hidden>
 			<legend>Options</legend>
-			<label for='inputTopic'> Topic: </label>
-			<input type=text id='inputTopic' placeholder='Silicate Chemistry'></input>
-			<label for='inputPluralTopic'> Plural Topic: </label>
-			<input type=checkbox id='inputPluralTopic' ></input>
-			<label for='inputExperts'> Experts: </label>
-			<input type=text id='inputExperts' placeholder='Geochemists'></input>
-			<label for='inputExample'> Example: </label>
-			<input type=text id='inputExample' placeholder='The formulas for olivine and one or two feldspars'></input>
-			<label for='inputResponse'> Response: </label>
-			<input type=text id='inputResponse' placeholder='Quartz'></input>
+			<label for='inputAdvancedMode'> Advanced: </label>
+			<input type=checkbox id='inputAdvancedMode' ></input>
+			<label class='advancedSettings' for='inputLine1' hidden> Line 1: </label>
+			<input class='advancedSettings' type=text id='inputLine1' placeholder='Silicate Chemistry is second nature for us Geochemists' hidden></input>
+			<label class='advancedSettings' for='inputLine1' hidden> Line 2: </label>
+			<input class='advancedSettings' type=text id='inputLine2' placeholder='And Quarts, of course.' hidden></input>
+			<label class='advancedSettings' for='inputLine3' hidden> Line 3: </label>
+			<input class='advancedSettings' type=text id='inputLine3' placeholder='Of course.' hidden></input>
+			<label class='simpleSettings' for='inputTopic'> Topic: </label>
+			<input class='simpleSettings' type=text id='inputTopic' placeholder='Silicate Chemistry'></input>
+			<label class='simpleSettings' for='inputPluralTopic'> Plural Topic: </label>
+			<input class='simpleSettings' type=checkbox id='inputPluralTopic' ></input>
+			<label class='simpleSettings' for='inputExperts'> Experts: </label>
+			<input class='simpleSettings' type=text id='inputExperts' placeholder='Geochemists'></input>
+			<label class='simpleSettings' for='inputExample'> Example: </label>
+			<input class='simpleSettings' type=text id='inputExample' placeholder='The formulas for olivine and one or two feldspars'></input>
+			<label class='simpleSettings' for='inputResponse'> Response: </label>
+			<input class='simpleSettings' type=text id='inputResponse' placeholder='Quartz'></input>
+			<label for='inputBottomText'> Bottom text: </label>
+			<input type=text id='inputBottomText' placeholder='Even when they are trying to compensate for it'></input>
 		</fieldset>
 		<section id='buttons'>
 			<button id='buttonCopy'>Copy to Clipboard</button>
